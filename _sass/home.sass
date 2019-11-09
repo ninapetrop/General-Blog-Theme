@@ -1,0 +1,64 @@
+#featured-content
+  background: #f8f9fa
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+    .column
+      @media screen and (min-width: 900px)
+        width: 33.33333333%
+        padding: 0 15px
+
+      a.article-thumbnail
+        display: block
+        position: relative
+        background-size: cover
+        background-position: center center
+
+        .article-text
+          position: absolute
+          bottom: 0
+          z-index: 10
+          padding: 20px
+          color: white
+
+          h3
+            font-size: 1.12rem
+            line-height: 1.5
+          p
+            font-size: 0.95rem
+            font-weight: 300
+            color: rgba(255,255,255,.5)
+
+      a.article-thumbnail::before
+        z-index: 1
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background: linear-gradient(to bottom,transparent 0%,transparent 18%,rgba(0,0,0,0.8) 99%,rgba(0,0,0,0.8) 100%)
+
+      a.article-thumbnail.height-50
+        height: 200px
+        &:first-of-type
+          margin-bottom: 30px
+      a.article-thumbnail.height-100
+        height: 100%
+
+#recent-posts
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+    flex-wrap: wrap
+  .post-preview-wrap
+    box-sizing: border-box
+    @media screen and (min-width: 900px)
+      width: 33.33333333%
+      padding: 0 15px
+    margin-bottom: 1.5rem
+
+    img
+      max-width: 100%
