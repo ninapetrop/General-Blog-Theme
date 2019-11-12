@@ -1,3 +1,5 @@
+.article-thumbnail, .article-thumbnail::before
+  border-radius: 4px
 #featured-content
   background: #f8f9fa
   .container
@@ -39,6 +41,7 @@
         bottom: 0
         left: 0
         background: linear-gradient(to bottom,transparent 0%,transparent 18%,rgba(0,0,0,0.8) 99%,rgba(0,0,0,0.8) 100%)
+        background-clip: border-box
 
       a.article-thumbnail.height-50
         height: 200px
@@ -55,10 +58,31 @@
     flex-wrap: wrap
   .post-preview-wrap
     box-sizing: border-box
+    margin-bottom: 1.5rem
+
     @media screen and (min-width: 900px)
       width: 33.33333333%
       padding: 0 15px
-    margin-bottom: 1.5rem
 
     img
       max-width: 100%
+
+    h3
+      font-size: 1.5rem
+      margin-bottom: 30px
+
+    p.article-meta
+      font-size: .928rem
+      height: 60px
+
+    p.artticle-description
+      font-size: 1.143rem
+      line-height: 1.7rem
+
+#subscribe
+  background: #279af1
+  p
+    font-size: 1rem
+    line-height: 1.7rem
+  form
+    margin-top: 3rem

@@ -214,6 +214,9 @@ h1, h2, h3, h4, h5, h6 {
 .highlight .il {
   color: #009999; }
 
+.article-thumbnail, .article-thumbnail::before {
+  border-radius: 4px; }
+
 #featured-content {
   background: #f8f9fa; }
   #featured-content .container {
@@ -253,7 +256,8 @@ h1, h2, h3, h4, h5, h6 {
       right: 0;
       bottom: 0;
       left: 0;
-      background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%); }
+      background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+      background-clip: border-box; }
     #featured-content .container .column a.article-thumbnail.height-50 {
       height: 200px; }
       #featured-content .container .column a.article-thumbnail.height-50:first-of-type {
@@ -280,6 +284,27 @@ h1, h2, h3, h4, h5, h6 {
       padding: 0 15px; } }
   #recent-posts .post-preview-wrap img {
     max-width: 100%; }
+  #recent-posts .post-preview-wrap h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px; }
+  #recent-posts .post-preview-wrap p.article-meta {
+    font-size: .928rem;
+    height: 60px; }
+  #recent-posts .post-preview-wrap p.artticle-description {
+    font-size: 1.143rem;
+    line-height: 1.7rem; }
+
+#subscribe {
+  background: #279af1; }
+  #subscribe p {
+    font-size: 1rem;
+    line-height: 1.7rem; }
+  #subscribe form {
+    margin-top: 3rem; }
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem; }
 
 body {
   background: white; }
@@ -292,6 +317,10 @@ body {
   margin: auto;
   padding: 0 15px;
   box-sizing: border-box; }
+
+.container.center-50 {
+  max-width: 600px;
+  text-align: center; }
 
 nav {
   padding: 1em 0;
