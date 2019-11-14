@@ -6,7 +6,10 @@
     display: flex
     justify-content: space-between
     align-items: stretch
+    @media screen and (max-width: 899px)
+      flex-wrap: wrap
     .column
+      width: 100%
       @media screen and (min-width: 900px)
         width: 33.33333333%
         padding: 0 15px
@@ -16,6 +19,9 @@
         position: relative
         background-size: cover
         background-position: center center
+        height: 200px
+        @media screen and (max-width: 899px)
+          margin-bottom: 2.14rem
 
         .article-text
           position: absolute
@@ -44,11 +50,12 @@
         background-clip: border-box
 
       a.article-thumbnail.height-50
-        height: 200px
-        &:first-of-type
-          margin-bottom: 30px
+        @media screen and (min-width: 900px)
+          &:first-of-type
+            margin-bottom: 30px
       a.article-thumbnail.height-100
-        height: 100%
+        @media screen and (min-width: 900px)
+          height: 100%
 
 #recent-posts
   .container
