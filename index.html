@@ -48,6 +48,7 @@ title: Your New Jekyll Site
       <div class="post-preview-wrap">
         <img class="article-thumbnail" src="{{ post.thumbnail }}" alt="{{ post.altimagetext }}" />
         <div class="article-excerpt">
+            <div class="article-category-tag">{{ post.categories }}</div>
             <h3><a href="#">{{ post.title }}</a></h3>
             <p class="article-meta">{{ post.date | date_to_string }}</p>
             <p class="artticle-description">{{ post.description }}</p>
@@ -66,9 +67,9 @@ title: Your New Jekyll Site
     <div class="container center-50">
       <h3>Stay in the Loop</h3>
       <p>Never miss a beat and get the latest stories, posts, and ideas delivered directly to your inbox. We'll never sell your information and you can opt-out at any time with a single click!</p>
-      <form action="#" class="d-flex">
-        <input type="text" class="form-control" placeholder="Enter your email address">
-        <input type="submit" class="btn btn-primary" value="Subscribe">
+      <form action="#">
+        <input type="email" id="email" placeholder="Enter your email address">
+        <input type="submit" id="form-submit-button" value="Subscribe">
         </form>
     </div>
 </div>
