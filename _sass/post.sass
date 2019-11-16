@@ -1,0 +1,56 @@
+.hero-image
+  height: 100vh
+  background-size: cover
+  background-position: center center
+  display: flex
+  align-items: center
+  .container
+    text-align: center
+    padding: 50px
+    flex-grow: 1
+    max-width: 850px
+    z-index: 1
+    color: white
+    .article-category-tag
+      background: rgb(139, 195, 74)
+      border-radius: 10px
+      display: inline-block
+      font-size: 0.686rem
+      font-weight: 700
+      letter-spacing: 1.92px
+      text-transform: uppercase
+      padding: 4px 10px
+      margin-bottom: 16px
+    h1
+      font-size: 2.286rem
+      line-height: 3.482rem
+      color: white
+      margin-bottom: 16px
+.hero-image::before
+  background: rgba(0,0,0,0.4)
+  position: absolute
+  content: ""
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+#article-image-credits
+  padding-top: 10px
+  padding-bottom: 50px
+  #image-credits
+    margin-right: 10px
+  #image-caption
+    margin-left: 10px
+.article-container
+  display: flex
+  justify-content: space-between
+  align-items: stretch
+  flex-wrap: wrap
+  article
+    max-width: 800px
+    .post
+      font-size: 1.142rem
+      line-height: 1.6
+  aside
+    flex-grow: 1
+    max-width: 300px

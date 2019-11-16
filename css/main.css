@@ -353,6 +353,74 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 1rem;
       line-height: 1.5; }
 
+.hero-image {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+  .hero-image .container {
+    text-align: center;
+    padding: 50px;
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+    max-width: 850px;
+    z-index: 1;
+    color: white; }
+    .hero-image .container .article-category-tag {
+      background: #8bc34a;
+      border-radius: 10px;
+      display: inline-block;
+      font-size: 0.686rem;
+      font-weight: 700;
+      letter-spacing: 1.92px;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      margin-bottom: 16px; }
+    .hero-image .container h1 {
+      font-size: 2.286rem;
+      line-height: 3.482rem;
+      color: white;
+      margin-bottom: 16px; }
+
+.hero-image::before {
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+#article-image-credits {
+  padding-top: 10px;
+  padding-bottom: 50px; }
+  #article-image-credits #image-credits {
+    margin-right: 10px; }
+  #article-image-credits #image-caption {
+    margin-left: 10px; }
+
+.article-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .article-container article {
+    max-width: 800px; }
+    .article-container article .post {
+      font-size: 1.142rem;
+      line-height: 1.6; }
+  .article-container aside {
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+    max-width: 300px; }
+
 h1, h2, h3 {
   font-weight: 700; }
 
@@ -379,7 +447,10 @@ body {
 nav {
   padding: 1em 0;
   border-bottom: solid 1px grey;
-  background-color: white; }
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  z-index: 1; }
 
 #footer {
   background: #2a2d34;

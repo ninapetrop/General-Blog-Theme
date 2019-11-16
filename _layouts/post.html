@@ -1,9 +1,29 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-{{ content }}
+<div class="hero-image" style="background-image: url('{{ page.thumbnail }}');">
+  <div class="container">
+    <div class="article-category-tag">{{ page.categories }}</div>
+    <h1>{{ page.title }}</h1>
+    <p class="article-meta">{{ page.date | date_to_string }}</p>
+  </div>
+</div>
+<div class="container" id="article-image-credits"><span id="image-credits">Image Credits</span>//<span id="image-caption">Caption of the image above. Descriptive enough, but nothing too crazy.</span></div>
+<div class="container article-container">
+  <article>
+    <div class="post">
+    {{ content }}
+    </div>
+  </article>
+  <aside>
+      <div class="aside-module" id="new-posts">
+        New Posts
+      </div>
+      <div class="aside-module" id="categories-posts">
+        New Posts
+      </div>
+      <div class="aside-module" id="tags-posts">
+        New Posts
+      </div>
+  </aside>
 </div>
